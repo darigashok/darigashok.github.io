@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dariga's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="header">
+    <div class="header-nav container">
+        <nav>
+            <a href = "index.html"><p id = "logo"><span>Dariga </span> Shokayeva</p></a>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#edu_section" onclick="opentab('education')">Education</a></li>
+                <li><a href="#edu_section" onclick="opentab('experience')">Experience</a></li>
+                <li><a href="#interests">Skills</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+    <video id="myVideo">
+        <source src="images/background.mp4" type="video/mp4">
+    </video>
+        <div class="header-text background-image">
+            <p class = "fadeText">  Hi, I am </p>
+            <p id = "fullname" class = "fadeText"><span>Dariga </span> Shokayeva</p>
+            <br>
+            <p class = "fadeText">  CS Junior <span>@</span> NYUAD</p>
+        </div>
+    <!-- </div> -->
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg" id="clickable">
+            </div>
+            <div class="about-col-2" id="about-section">
+                <h1 class="sub-title">About Me</h1>
+                <ul id="list-items">
+                    <li>A Computer Science Junior Student at NYU Abu Dhabi</li>
+                    <li>Minors: Applied Mathematics and Interactive Media</li>
+                    <li>Expected Graduation Year: 2024</li>
+                    <li>Born and Raised in Kazakhstan</li>
+                    <li>Currently Based in United Arab Emirates</li>
+                    <li>Interested in Making Impactful Projects in Machine Learning and Software Engineering</li>
+                    <!-- <li> <a href=""><i class="fa-brands fa-github"></i></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a></li> -->
+                </ul>
+            </div>
+            
+              
+        </div>
+    </div>
+</div>
+<div id = "skills-section">
+    <div class = "container" id ="edu_section">
+        <h1 class="sub-title"> Education & Experience</h1>
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('education')" id = "education">Education</p>
+            <p class="tab-links" onclick="opentab('experience')" id = "experience">Experience</p>
+            <!-- <p class="tab-links" onclick="opentab('skills')">Skills</p> -->
+        </div>
+        <div class="education-section tab-contents active-tab" id="edu_content">
+                <ul class="education-list">
+                  <li>
+                    <span class="education-period">Sep. 2020 - May 2024</span><br>
+                    <span class="institution-name">New York University Abu Dhabi</span> - Abu Dhabi, UAE<br>
+                    Anticipated Degree: B.S. in Computer Science<br>
+                    <i>Relevant coursework:</i> Software Engineering, Operating Systems, Computer Networks, Algorithms, Computer System Organization, Projects in Programming and Data Science, Machine Learning, Applied ML & Communications Lab <i>(in progress)</i><br>
+                    <b><a href="https://nyuad.nyu.edu/" class="institution-link" target="_blank" rel="noopener noreferrer">Visit University Website</a></b>
+                  </li>
+                  <li>
+                    <span class="education-period">Sep. 2010 - Jun. 2019</span><br>
+                    <span class="institution-name">Nazarbayev Intellectual School</span> - Kokshetau, Kazakhstan<br>
+                    A-level Education with an emphasis on Computer Science, Physics, and Mathematics<br>
+                    <b><a href="https://www.nis.edu.kz/" class="institution-link" target="_blank" rel="noopener noreferrer">Visit School Website</a></b>
+                  </li>
+                </ul>
+          </div>
+        <div class="experience-section tab-contents" id ="exp_content">
+            <ul class="experience-list">
+                <li>
+                  <span class="experience-period">Jan. 2023 - Mar. 2023</span><br>
+                  <span class="institution-name">Undergraduate Teaching Assistant | C++ Object Oriented Programming</span> - Abu Dhabi, UAE<br>
+                  Performed grading of students' assignments, provided feedback and engaged with students and course instructors to improve the student experience in the course "Object-Oriented Programming" taught by Professor Tuka Alhanai with 30+ students enrolled in NYUAD Department of Engineering.<br>
+                </li>
+                <li>
+                  <span class="experience-period">Jun.2022 - Aug. 2022</span><br>
+                  <span class="institution-name">Programming and Mathematics Tutor | Python, C/C++ </span> - Astana, Kazakhstan <br>
+                  Led individual and group sessions to explain and teach programming and mathematics concepts for pre-university students. <br>
+                </li>
+                <li>
+                <span class="experience-period">Mar. 2022 - May 2022</span><br>
+                <span class="institution-name">Maching Learning Research Assistant | Python & ML </span> - Abu Dhabi, UAE <br>
+                Worked in a team supervised by Professor Baghdadi on the dataset for ML model on text-to-code generation accuracy. <br>
+                </li>
+                <li>
+                <span class="experience-period">Jul. 2021 - Dec. 2021</span><br>
+                <span class="institution-name">Freelance Developer | Back-end & Testing </span> - Remote, UAE <br>
+                Developed and performed testing of short-term projects in Python | C++ for local businesses in Kazakhstan. <br>
+                </li>
+                <li>
+                <span class="experience-period">Jul. 2018 - Nov. 2020</span><br>
+                <span class="institution-name">Chief Editor & PR - Manager | Social Media Engagement & Writing </span> - Remote, Kazakhstan<br>
+                Managed the social media platforms and blog of BeyondCurriculum to promote the topics of Science Olympiads, education, and self-development.<br>
+                </li>
+                <li>
+                <span class="experience-period">Sep. 2019 - Dec. 2019</span><br>
+                <span class="institution-name">SAT & IELTS Tutor | English </span> - Astana, Kazakhstan <br>
+                Developed courses to prepare for SAT and IELTS examinations based on my experience and taught the course individually to students applying to universities abroad.<br>
+                </li>
+                <li>
+                <span class="experience-period">Sep. 2018 - Apr. 2019 </span><br>
+                <span class="institution-name">Web Development Tutor | HTML, CSS, JS & PHP </span> - Kokshetau, Kazakhstan<br>
+                Assisted and taught fellow Computer Science students to build functional websites with basic interactivity.<br>
+                </li>
+              </ul>
+        </div>
+</div>
+</div>
+<!-- ---------interests---------------- -->
+<div id="interests">
+    <div class="container">
+        <h1 class="sub-title">Skills</h1>
+        <div class="interests-list">
+            <div>
+                <i class="fa-solid fa-code-branch"></i>
+                <h2>Machine Learning & Data Science</h2>
+                <p>Confident in Python, Pandas, SQL, Seaborn, Matplotlib, PyTorch, and Tensorflow. </p>
+            </div>
+            <!-- <i class="fas fa-code"></i> -->
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Full-Stack Development</h2>
+                <p>Comfortable in HTML, CSS, JavaScript, Python, C/C++, Database Systems, and learning Flutter.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Game Development & VR</h2>
+                <p>Learning Unity and its applications in GameDev and VR.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>LocateYourWaste | Interactive Data-Driven Website</h3>
+                    <p>The website deploys extensive data analytics and maps based on NYC Open Data using SQL, Pandas, and Matplotlib extensively. <br> Received #1 Rank among final group projects at NYU Stern School of Business.</p>
+                    <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>NYUAD @ 9am | Short Film Project</h3>
+                    <p>The website is built to present a 30MFF film project about NYUAD campus developed for the Communications Lab Course at NYUAD. <br> Follow the link to access the website.</p>
+                    <a href="https://darigashok.github.io/nyuad-at-9am/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class = "work-list">
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Battle of the Band Instruments | Interactive Group Sound Project</h3>
+                    <p>The web project presents the interactive sound project - the imaginary competition of piano, guitar, and drums for the title of the best band instrument. <br> Follow the link to enjoy the experience.</p>
+                    <a href="https://darigashok.github.io/bobi-sound-project/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-4.png">
+                <div class="layer">
+                    <h3>Dumb Choices Only | Interactive Group Video Project</h3>
+                    <p>The web application deploys an interactive video project in the alternate universe where non-traditional choices made by user are leading to the best possible outcomes. <br> Follow the link to try it out.</p>
+                    <a href="https://darigashok.github.io/dumb-choices-only/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class = "work-list extra-project">
+            <div class="work">
+                <img src="images/work-5.png">
+                <div class="layer">
+                    <h3>Lunchbox Tale | Web Animated Interactive Comics</h3>
+                    <p>The project tells an interactive comics story about the friendship and love of two marbles united by food. <br> Follow the link to engage with the comics project.</p>
+                    <a href="https://eric-asare.github.io/lunch-box-tale/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-6.png">
+                <div class="layer">
+                    <h3> GoogLe Net | Convolutional Neural Network Implementation in PyTorch</h3>
+                    <p>The Python script using PyTorch libraries replicated the CNN with the speficied arkhitecture GoogLe Net achieving 98% training and 89% testing accuracy on MNIST dataset.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <a href="javascript:void(0)" class="btn" id = "seemore" onclick="showExtraProjects()">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title" id ="contactme">Contact Me</h1>
+                <!-- <p>- Open for new job opportunities and connections</p>
+                <p>- Happy to chat and connect you with people who have worked with me upon request!</p> -->
+                <p><i class="fa-solid fa-envelope"></i>dariga.shokayeva@nyu.edu</p>
+                <!-- <p><i class="fa-solid fa-mobile"></i></p> -->
+                <div class="social-icons">
+                    <a href="https://github.com/darigashok" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></i></a>
+                    <a href="https://www.linkedin.com/in/dariga-shokayeva/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/dariga.shokayeva" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                    <a href="https://t.me/dariga_s" target="_blank" rel="noopener noreferrer"><i class="fas fa-paper-plane"></i></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2" target="_blank" rel="noopener noreferrer">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p> Dariga Shokayeva. Updated on May 2023</a></p>
+    </div>
+</div>
+  <script src="app.js"></script>
+</body>
+</html>
